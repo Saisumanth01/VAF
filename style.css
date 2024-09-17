@@ -728,3 +728,220 @@ body {
   .social-link:hover {
     color: #00ffff;
   }
+
+  /* Mobile Styles */
+@media (max-width: 767px) {
+  /* Header Styles */
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo img {
+    height: 100px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  /* Hero Section Styles */
+  .hero-section {
+    padding: 40px 0;
+  }
+
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-content {
+    padding-right: 0;
+  }
+
+  .hero-title {
+    font-size: 32px;
+  }
+
+  .hero-description {
+    font-size: 18px;
+  }
+
+  .hero-image img {
+    max-width: 100%;
+  }
+
+  /* Features Section Styles */
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* How It Works Section Styles */
+  .how-it-works-content {
+    grid-template-columns: 1fr;
+  }
+
+  /* Technical Details Section Styles */
+  .technical-details-content {
+    grid-template-columns: 1fr;
+  }
+
+  /* Pricing Section Styles */
+  .pricing-plans {
+    grid-template-columns: 1fr;
+  }
+
+  /* Call-to-Action Section Styles */
+  .cta-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-content {
+    padding-right: 0;
+  }
+
+  .cta-image img {
+    max-width: 100%;
+  }
+
+  /* Footer Styles */
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-section {
+    padding: 10px;
+  }
+
+  .footer-title {
+    font-size: 16px;
+  }
+
+  .footer-text,
+  .footer-links li a,
+  .footer-contact li {
+    font-size: 12px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-input {
+    margin-bottom: 10px;
+  }
+
+  .newsletter-button {
+    width: 100%;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social-links {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .social-link {
+    margin-left: 10px;
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* Header Styles */
+  .header-container {
+    flex-direction: row;
+  }
+
+  .logo img {
+    height: 120px;
+  }
+
+  nav ul {
+    flex-direction: row;
+  }
+
+  nav ul li {
+    margin-right: 15px;
+  }
+
+  /* Hero Section Styles */
+  .hero-section {
+    padding: 60px 0;
+  }
+
+  .hero-container {
+    flex-direction: row;
+  }
+
+  .hero-title {
+    font-size: 40px;
+  }
+
+  .hero-description {
+    font-size: 20px;
+  }
+
+  .hero-image img {
+    max-width: 80%;
+  }
+
+  /* Features Section Styles */
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* How It Works Section Styles */
+  .how-it-works-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Technical Details Section Styles */
+  .technical-details-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Pricing Section Styles */
+  .pricing-plans {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Call-to-Action Section Styles */
+  .cta-container {
+    flex-direction: row;
+  }
+
+  .cta-image img {
+    max-width: 60%;
+  }
+
+  /* Footer Styles */
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-section {
+    padding: 20px;
+  }
+
+  .footer-title {
+    font-size: 18px;
+  }
+
+  .footer-text,
+  .footer-links li a,
+  .footer-contact li {
+    font-size: 14px;
+  }
+}
