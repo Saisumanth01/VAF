@@ -10,20 +10,20 @@
   <header>
     <div class="header-container">
       <div class="logo">
-        <a href="#">
+        <a href="#feature">
           <img src="https://github.com/Saisumanth01/VAF/blob/main/1.jpg.jpg?raw=true" alt="VAF Logo">
         </a>
       </div>
       <nav>
         <ul>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">How It Works</a></li>
-          <li><a href="#">Pricing</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#feature">Features</a></li>
+          <li><a href="#howitwork">How It Works</a></li>
+          <li><a href="#price">Pricing</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
       <div class="cta-button">
-        <a href="#" class="btn">Try VAF Now</a>
+        <a href="#tryit.html" class="btn">Try VAF Now</a>
       </div>
     </div>
   </header>
@@ -44,7 +44,7 @@
   </section>
   <section class="features-section">
     <div class="features-container">
-      <h2 class="section-title">Features</h2>
+      <h2 class="section-title" id="feature">Features</h2>
       <div class="feature-grid">
         <div class="feature-item">
           <div class="feature-icon">
@@ -79,7 +79,7 @@
   </section>
   <section class="how-it-works-section">
     <div class="how-it-works-container">
-      <h2 class="section-title">How It Works</h2>
+      <h2 class="section-title" id="howitwork">How It Works</h2>
       <div class="how-it-works-content">
         <div class="step-item">
           <div class="step-number">1</div>
@@ -149,7 +149,7 @@
   </section>
   <section class="pricing-section">
     <div class="pricing-container">
-      <h2 class="section-title">Pricing and Plans</h2>
+      <h2 class="section-title" id="price">Pricing and Plans</h2>
       <div class="pricing-plans">
         <div class="plan-item">
           <h3 class="plan-title">Basic</h3>
@@ -164,20 +164,21 @@
           </ul>
           <a href="#" class="btn">Get Started</a>
         </div>
-        <div class="plan-item featured">
-          <h3 class="plan-title">Pro</h3>
-          <div class="plan-price">
-            <span class="price">$19</span>
+        <div class="plan-item featured" style="background-color: skyblue; color: white; padding: 20px; border-radius: 10px; text-align: center; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+          <h3 class="plan-title" style="font-size: 24px; margin-bottom: 10px;">Pro</h3>
+          <div class="plan-price" style="font-size: 22px; margin-bottom: 15px;">
+            <span class="price" style="font-weight: bold;">$19</span>
             <span class="period">/month</span>
           </div>
-          <ul class="plan-features">
-            <li>Isolated user sessions</li>
-            <li>Firewall protection</li>
-            <li>Advanced IPS and IDS</li>
-            <li>VPN integration</li>
+          <ul class="plan-features" style="list-style-type: none; padding: 0; margin: 0; font-size: 16px; margin-bottom: 20px;">
+            <li style="margin: 10px 0;">Isolated user sessions</li>
+            <li style="margin: 10px 0;">Firewall protection</li>
+            <li style="margin: 10px 0;">Advanced IPS and IDS</li>
+            <li style="margin: 10px 0;">VPN integration</li>
           </ul>
-          <a href="#" class="btn">Get Started</a>
+          <a href="tryit.html" class="btn" style="display: inline-block; background-color: white; color: skyblue; padding: 10px 20px; border-radius: 5px; text-decoration: none; font-size: 16px; font-weight: bold; transition: background-color 0.3s ease, transform 0.3s ease; cursor: pointer;">Get Started</a>
         </div>
+        
         <div class="plan-item">
           <h3 class="plan-title">Enterprise</h3>
           <div class="plan-price">
@@ -215,18 +216,27 @@
     <div class="footer-container">
       <div class="footer-content">
         <div class="footer-section">
-          <h3 class="footer-title">About VAF</h3>
+          <h3 class="footer-title" id="contact">About VAF</h3>
           <p class="footer-text">VAF is a powerful Virtual Application Firewall solution that provides complete isolation and security for your network.</p>
         </div>
-        <div class="footer-section">
-          <h3 class="footer-title">Quick Links</h3>
-          <ul class="footer-links">
-            <li><a href="#">Features</a></li>
-            <li><a href="#">How It Works</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Contact</a></li>
+        <div class="footer-section" style="background-color: black; padding: 20px; text-align: center; color: white;">
+          <h3 class="footer-title" style="font-size: 24px; color: white; margin-bottom: 15px;">Quick Links</h3>
+          <ul class="footer-links" style="list-style-type: none; padding: 0; margin: 0;">
+            <li style="margin: 10px 0;">
+              <a href="#feature" style="color: white; text-decoration: none; font-size: 16px; transition: color 0.3s ease;">Features</a>
+            </li>
+            <li style="margin: 10px 0;">
+              <a href="#howitwork" style="color: white; text-decoration: none; font-size: 16px; transition: color 0.3s ease;">How It Works</a>
+            </li>
+            <li style="margin: 10px 0;">
+              <a href="#price" style="color: white; text-decoration: none; font-size: 16px; transition: color 0.3s ease;">Pricing</a>
+            </li>
+            <li style="margin: 10px 0;">
+              <a href="#contact" style="color: white; text-decoration: none; font-size: 16px; transition: color 0.3s ease;">Contact</a>
+            </li>
           </ul>
         </div>
+        
         <div class="footer-section">
           <h3 class="footer-title">Contact Us</h3>
           <ul class="footer-contact">
@@ -235,13 +245,17 @@
             <li><i class="fas fa-map-marker-alt"></i> 123 Cyberpunk Street, Dystopia</li>
           </ul>
         </div>
-        <div class="footer-section">
-          <h3 class="footer-title">Newsletter</h3>
-          <form class="newsletter-form">
-            <input type="email" placeholder="Enter your email" class="newsletter-input">
-            <button type="submit" class="newsletter-button">Subscribe</button>
+        <div class="footer-section" style="background-color: black; padding: 20px; text-align: center; border-radius: 10px; color: white;">
+          <h3 class="footer-title" style="font-size: 24px; color: skyblue; margin-bottom: 15px;">Newsletter</h3>
+          <form class="newsletter-form" style="display: flex; justify-content: center; align-items: center;">
+            <input type="email" placeholder="Enter your email" class="newsletter-input" style="padding: 10px; width: 250px; border-radius: 5px; border: none; margin-right: 10px;">
+            <button type="submit" class="newsletter-button" style="background-color: skyblue; color: black; border: none; padding: 10px 20px; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background-color 0.3s ease;">
+              Subscribe
+            </button>
           </form>
         </div>
+        
+        
       </div>
       <div class="footer-bottom">
         <p class="copyright">&copy; 2024 VAF. All rights reserved.</p>

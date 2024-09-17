@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try VAF</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #000; /* Black background for contrast */
+            color: #fff; /* White text color */
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .content {
+            text-align: center;
+        }
+        .btn {
+            display: inline-block;
+            background-color: skyblue;
+            color: black;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: white;
+            transform: scale(1.1);
+        }
+        #lottie-container {
+            width: 100%;
+            height: 500px;
+            margin: 20px 0;
+        }
+        .animation-container {
+            perspective: 1000px;
+        }
+        .animated-object {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            transform: rotateY(0deg);
+            transition: transform 2s;
+        }
+        .animated-object:hover {
+            transform: rotateY(360deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Experience VAF</h1>
+        <p>Try the Virtual Application Firewall and see how it protects against cyber attacks.</p>
+        <div id="lottie-container"></div>
+        <div class="animation-container">
+            <div class="animated-object">
+                <!-- 3D object or animation could be added here -->
+            </div>
+        </div>
+        <a href="index.html" class="btn">Back to Home</a>
+    </div>
+
+    <!-- Lottie Files Integration -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"></script>
+    <script>
+        var animation = bodymovin.loadAnimation({
+            container: document.getElementById('lottie-container'),
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+            path: 'https://lottie.host/embed/7b5cbae3-bfa9-486b-9ec5-0b233fe1378e/YD3OMMOtdg.json'
+        });
+    </script>
+</body>
+</html>
