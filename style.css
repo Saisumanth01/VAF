@@ -619,9 +619,10 @@ body {
   .footer-section {
     position: relative;
     overflow: hidden;
-  }
-  
-  .footer-section:before {
+    padding: 20px; /* Optional: add padding for better spacing */
+}
+
+.footer-section:before {
     content: "";
     position: absolute;
     top: 0;
@@ -632,12 +633,24 @@ body {
     opacity: 0.1;
     transform: translateX(-100%);
     transition: transform 0.5s ease;
-  }
-  
-  .footer-section:hover:before {
+    pointer-events: none; /* Allow clicks to pass through */
+}
+
+.footer-section:hover:before {
     transform: translateX(0);
-  }
-  
+}
+
+/* Optional: Styling for links within the footer section */
+.footer-section a {
+    color: #fff; /* White text color for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #00ffff; /* Change color on hover */
+}
+
   .footer-title {
     font-size: 18px;
     font-weight: bold;
