@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Try VAF</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body {
             margin: 0;
@@ -16,8 +17,6 @@
             align-items: center;
             justify-content: center;
             height: 100vh;
-        }
-        .content {
             text-align: center;
         }
         .btn {
@@ -31,28 +30,24 @@
             font-weight: bold;
             transition: background-color 0.3s ease, transform 0.3s ease;
             cursor: pointer;
+            margin-top: 20px;
         }
         .btn:hover {
             background-color: white;
             transform: scale(1.1);
         }
         #lottie-container {
-            width: 100%;
-            height: 500px;
+            width: 300px;
+            height: 300px;
             margin: 20px 0;
         }
-        .animation-container {
-            perspective: 1000px;
+        .diagram {
+            width: 80%;
+            margin: 20px 0;
         }
-        .animated-object {
-            width: 200px;
-            height: 200px;
-            margin: 0 auto;
-            transform: rotateY(0deg);
-            transition: transform 2s;
-        }
-        .animated-object:hover {
-            transform: rotateY(360deg);
+        .diagram svg {
+            width: 100%;
+            height: auto;
         }
     </style>
 </head>
@@ -60,25 +55,59 @@
     <div class="content">
         <h1>Experience VAF</h1>
         <p>Try the Virtual Application Firewall and see how it protects against cyber attacks.</p>
-        <div id="lottie-container"></div>
-        <div class="animation-container">
-            <div class="animated-object">
-                <!-- 3D object or animation could be added here -->
-            </div>
+        
+        <!-- Lottie Animation -->
+        <lottie-player src="https://lottie.host/7b5cbae3-bfa9-486b-9ec5-0b233fe1378e/YD3OMMOtdg.json" 
+                       background="transparent" 
+                       speed="1" 
+                       style="width: 300px; height: 300px;" 
+                       loop 
+                       controls 
+                       autoplay>
+        </lottie-player>
+        
+        <!-- Block Diagram -->
+        <div class="diagram">
+            <h2>Block Diagram</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+                <rect x="20" y="20" width="160" height="40" fill="#333" stroke="#fff" stroke-width="2"/>
+                <text x="100" y="45" font-size="12" text-anchor="middle" fill="#fff">Threat Detection Engine</text>
+                <line x1="100" y1="60" x2="100" y2="100" stroke="#fff" stroke-width="2"/>
+                <rect x="20" y="100" width="160" height="40" fill="#333" stroke="#fff" stroke-width="2"/>
+                <text x="100" y="125" font-size="12" text-anchor="middle" fill="#fff">Firewall Rules Database</text>
+                <line x1="100" y1="140" x2="100" y2="180" stroke="#fff" stroke-width="2"/>
+                <rect x="20" y="180" width="160" height="40" fill="#333" stroke="#fff" stroke-width="2"/>
+                <text x="100" y="205" font-size="12" text-anchor="middle" fill="#fff">Traffic Monitoring</text>
+            </svg>
         </div>
+
+        <!-- Flow Chart -->
+        <div class="diagram">
+            <h2>Flow Chart</h2>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200">
+                <rect x="20" y="20" width="120" height="40" fill="#333" stroke="#fff" stroke-width="2"/>
+                <text x="80" y="45" font-size="12" text-anchor="middle" fill="#fff">Initialization</text>
+                <line x1="80" y1="60" x2="80" y2="100" stroke="#fff" stroke-width="2"/>
+                <rect x="20" y="100" width="120" height="40" fill="#333" stroke="#fff" stroke-width="2"/>
+                <text x="80" y="125" font-size="12" text-anchor="middle" fill="#fff">Traffic Monitoring</text>
+                <line x1="80" y1="140" x2="80" y2="180" stroke="#fff" stroke-width="2"/>
+                <rect x="20" y="180" width="120" height="40" fill="#333" stroke="#fff" stroke-width="2"/>
+                <text x="80" y="205" font-size="12" text-anchor="middle" fill="#fff">Threat Detection</text>
+                <line x1="140" y1="40" x2="200" y2="40" stroke="#fff" stroke-width="2"/>
+                <line x1="140" y1="100" x2="200" y2="100" stroke="#fff" stroke-width="2"/>
+                <line x1="140" y1="180" x2="200" y2="180" stroke="#fff" stroke-width="2"/>
+                <rect x="200" y="20" width="120" height="40" fill="#333" stroke="#fff" stroke-width="2"/>
+                <text x="260" y="45" font-size="12" text-anchor="middle" fill="#fff">Mitigation</text>
+                <line x1="260" y1="60" x2="260" y2="100" stroke="#fff" stroke-width="2"/>
+                <rect x="200" y="100" width="120" height="40" fill="#333" stroke="#fff" stroke-width="2"/>
+                <text x="260" y="125" font-size="12" text-anchor="middle" fill="#fff">Feedback & Learning</text>
+            </svg>
+        </div>
+
         <a href="index.html" class="btn">Back to Home</a>
     </div>
 
     <!-- Lottie Files Integration -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.6/lottie.min.js"></script>
-    <script>
-        var animation = bodymovin.loadAnimation({
-            container: document.getElementById('lottie-container'),
-            renderer: 'svg',
-            loop: true,
-            autoplay: true,
-            path: 'https://lottie.host/embed/7b5cbae3-bfa9-486b-9ec5-0b233fe1378e/YD3OMMOtdg.json'
-        });
-    </script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 </html>
